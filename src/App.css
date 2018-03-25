@@ -1,0 +1,101 @@
+#root {
+  height: 100%;
+  width: 100%;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  /*animation: App-logo-spin infinite 20s linear;*/
+  display:inline-block;
+  float:left;
+  vertical-align: middle;
+  height: 80px;
+}
+
+.App-header {
+  clear: both;
+  position: relative;
+  background-color: #222;
+  padding: 20px;
+  color: white;
+  height: 80px;
+}
+
+.companyTitle {
+  float: left;
+  display: flex;
+  align-items: center;
+  vertical-align:middle;
+  height: 100%;
+  margin: 0 10px;
+  padding: auto;
+  overflow: hidden;
+}
+
+.companyName {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.App-title {
+  font-size: 1.5em;
+}
+
+.App-intro {
+  font-size: large;
+}
+
+.headerIcon {
+  clear: both;
+  float: left;
+  display: inline-block;
+  width: auto;
+  height: auto;
+}
+
+.navMenu {
+  float:right;
+  display: inline-block;
+  list-style-type: none;
+}
+
+.navMenu li {
+  float: left;
+  display: inline-flex;
+  flex-direction: row;
+  flex-wrap:nowrap;
+  justify-content: space-evenly;
+  margin: auto;
+  padding: 1em;
+}
+
+.mainWindow {
+  clear: both;
+  display: flex;
+  width: 85%;
+  position: relative;
+  margin: auto;
+  padding: auto;
+  background-color: green;
+}
+
+.Footer {
+  clear: both;
+  display:flex;
+  float:left;
+  position: absolute;
+  bottom: 0;
+  left: 7.5%;
+  height: auto;
+  width: 85%;
+  background-color: grey;
+  margin: auto;
+  padding: auto;
+}
+
+@keyframes App-logo-spin {
+  from { transform: rotate(0deg); }
+  to { transform: rotate(360deg); }
+}
