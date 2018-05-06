@@ -1,28 +1,17 @@
 import React from 'react';
-import logo from './logo.svg';
-class Header extends React.Component {
-	render() {
-		const siteLinks = ['Home', 'About', 'Projects', 'Contact'];
-
-
-		return (
-			<header className='appHeader'>
-				<div className='logoContainer'>
-					<img className='siteLogo' src={logo} />
-				</div>
-				<div className=''>
-					<ul className='navBar'>
-						{siteLinks.map(i => {
-							return(<li key={i.toString()}>{i}</li>)
-						})}
-					</ul>
-				</div>
-			</header>
-			)
-	}
+let Links = ['Home', 'About', 'Projects', 'Contact'];
+const navLinks = (props) => {
+	return (
+		<ul>
+			{Links.map(i => {
+				return(<li key={Links.i}>{i}</li>);
+			})}
+		</ul>
+		);
 }
 
-export default Header;
+export default navLinks;
+
 
 
 /*

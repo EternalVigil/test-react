@@ -1,101 +1,137 @@
 #root {
-  height: 100%;
-  width: 100%;
+    height: 100%;
+    width: 100%;
+    background-color: tan;
 }
+
+#container {
+    display: grid;
+    grid-template-columns: [first] 40px [line2] 50px [line3] auto [col4-start] 50px [five] 40px [end];
+    grid-template-rows: [row1-start] 25% [row1-end] 100px [third-line] auto [last-line];
+}
+
 .App {
-  text-align: center;
-}
-
-.App-logo {
-  /*animation: App-logo-spin infinite 20s linear;*/
-  display:inline-block;
-  float:left;
-  vertical-align: middle;
-  height: 80px;
-}
-
-.App-header {
-  clear: both;
-  position: relative;
-  background-color: #222;
-  padding: 20px;
-  color: white;
-  height: 80px;
-}
-
-.companyTitle {
-  float: left;
-  display: flex;
-  align-items: center;
-  vertical-align:middle;
-  height: 100%;
-  margin: 0 10px;
-  padding: auto;
-  overflow: hidden;
-}
-
-.companyName {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-.App-title {
-  font-size: 1.5em;
-}
-
-.App-intro {
-  font-size: large;
-}
-
-.headerIcon {
-  clear: both;
-  float: left;
-  display: inline-block;
-  width: auto;
-  height: auto;
-}
-
-.navMenu {
-  float:right;
-  display: inline-block;
-  list-style-type: none;
-}
-
-.navMenu li {
-  float: left;
-  display: inline-flex;
-  flex-direction: row;
-  flex-wrap:nowrap;
-  justify-content: space-evenly;
-  margin: auto;
-  padding: 1em;
+    text-align: center;
+    display: grid;
 }
 
 .mainWindow {
-  clear: both;
-  display: flex;
-  width: 85%;
-  position: relative;
-  margin: auto;
-  padding: auto;
-  background-color: green;
+    grid-column-start: first;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: last-line;
+    width: 80%;
+    min-height: 100vh;
+    position: relative;
+    margin: auto;
+    padding: auto;
+    background-color: green;
+}
+
+.siteLogo {
+    /*animation: App-logo-spin infinite 20s linear;*/
+    display: inline-block;
+    float: left;
+    position: relative;
+    vertical-align: middle;
+    width: 80px;
+    height: 80px;
+}
+
+.appHeader {
+    display: flex;
+    grid-column-start: first;
+    grid-column-end: end;
+    grid-row-start: row1-start;
+    grid-row-end: row1-end;
+    background-color: #222;
+    color: white;
+    width: 100%;
+    height: auto;
+    border: 2px silver solid;
+}
+
+.siteTitle {
+    float: left;
+    display: flex;
+    align-items: center;
+    vertical-align: middle;
+    height: auto%;
+    margin: 0 10px;
+    padding: auto;
+    overflow: hidden;
+}
+
+.siteName {
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.App-title {
+    font-size: 1.5em;
+}
+
+.App-intro {
+    font-size: large;
+}
+
+.logoContainer {
+    display: block;
+    float: left;
+    width: auto;
+    height: auto;
+}
+
+.headerIcon {
+    clear: both;
+    float: left;
+    display: inline-block;
+    width: auto;
+    height: auto;
+}
+
+.navBar {
+    float: right;
+    display: inline-block;
+    list-style-type: none;
+}
+
+.navBar li {
+    float: left;
+    display: inline-flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    margin: auto;
+    padding: 1em;
+}
+
+.contentContainer {
+    clear: both;
+    display: block;
+    border: 2px solid red;
+    width: 100%;
+    height: 100%;
 }
 
 .Footer {
-  clear: both;
-  display:flex;
-  float:left;
-  position: absolute;
-  bottom: 0;
-  left: 7.5%;
-  height: auto;
-  width: 85%;
-  background-color: grey;
-  margin: auto;
-  padding: auto;
+    clear: both;
+    display: flex;
+    float: left;
+    position: absolute;
+    bottom: 0;
+    height: auto;
+    width: 100%;
+    background-color: grey;
+    margin: auto;
+    padding: auto;
 }
 
 @keyframes App-logo-spin {
-  from { transform: rotate(0deg); }
-  to { transform: rotate(360deg); }
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(360deg);
+    }
 }

@@ -1,7 +1,7 @@
 import React from 'react';
-
 import styles from '../App.css';
 import Header from '../Header';
+import Content from '../Content';
 import Footer from '../Footer';
 
 export default class Home extends React.Component {
@@ -11,11 +11,11 @@ export default class Home extends React.Component {
 	render() {
 		return(
 			<div id='container' className={styles.app}>
-			<Header />
 			<container className='mainWindow'>
-				<span>Home</span>
-			</container>
+			<Header />
+			<Content />
 			<Footer />
+			</container>
 			</div>
 			);
 	}
